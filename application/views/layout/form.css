@@ -1,0 +1,26 @@
+/* Gaya Khusus untuk Halaman Login */
+body {
+    background-color: pink; /* Ganti dengan warna latar belakang yang Anda inginkan */
+}
+
+.card {
+    background-color: #ffffff; /* Ganti dengan warna latar belakang kartu login */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk kartu */
+}
+
+.card-title {
+    color: #333; /* Ganti warna judul kartu sesuai kebutuhan */
+}
+
+.card-body {
+    padding: 20px; /* Beri jarak pada isi kartu */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Ganti warna tombol login sesuai kebutuhan */
+    border: none; /* Hilangkan garis batas tombol */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Warna tombol saat dihover */
+}
