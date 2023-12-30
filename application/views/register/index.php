@@ -1,7 +1,11 @@
 <table class="table table-bordered">
-    <h2>Form Registrasi</h2>
-
-    <br>
+    <tr>
+        <td style="width: 60px;">
+            <img src="<?php echo base_url(); ?>assets/images/logo.jpg" width="0" />
+        </td>
+        <td>
+            <h2 style="border: none;">Form Registrasi</h2>
+            <br>
     
     <?php echo form_open('auth/register'); ?>
     <tbody>
