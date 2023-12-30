@@ -1,5 +1,5 @@
 <h2>Daftar Chat Group</h2>
-<?php echo anchor('group/add', 'Buat Chat Group', ['class' => 'btn btn-primary btn-sm']); ?>
+<?php echo anchor('group/add', 'Buat Chat Group', ['class' => 'btn btn-info']); ?>
 <br />
 <br />
 <table class="table table-bordered">
@@ -25,7 +25,7 @@
       <td>$r->created_by</td>
       <td>$r->total_member</td>
       <td>".
-        anchor('group/check/'. $r->chat_id, 'Chat', ['class' => 'btn btn-success btn-sm'])
+        anchor('group/check/'. $r->chat_id, 'Chat', ['class' => 'btn btn-success'])
       ."</td>
     </tr>";
   }
@@ -42,7 +42,7 @@
         <div class="card-body">
             <h2 class="card-title">Chat Konselor</h2>
             <p class="card-text">Konselor siap membantu Anda dengan berbagai permasalahan kehidupan sehari-hari, memberikan dukungan emosional, serta bantuan dalam menghadapi situasi yang sulit.</p>
-            <?php echo anchor('group/kanselor', 'Pilih Spesialist Kanselor', ['class' => 'btn btn-primary btn-sm']); ?>
+            <?php echo anchor('group/kanselor', 'Pilih Spesialist Kanselor', ['class' => 'btn btn-info']); ?>
         </div>
     </div>
 </div>
@@ -55,7 +55,7 @@
             <?php if ($this->session->userdata('role') == 'Admin'): ?>
                 <a href="<?= base_url()?>Chat/" class="btn btn-primary">Pilih Psikiater</a>
             <?php else: ?>
-                <?php echo anchor('group/psikiater', 'Pilih Spesialist Psikiater', ['class' => 'btn btn-primary btn-sm']); ?>
+                <?php echo anchor('group/psikiater', 'Pilih Spesialist Psikiater', ['class' => ''btn btn-info']); ?>
             <?php endif; ?>
         </div>
     </div>
