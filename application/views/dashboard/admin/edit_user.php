@@ -1,55 +1,56 @@
 <!-- Assuming you have received $userData from the controller -->
 
 <style>
-    /* CSS untuk mempercantik tampilan form */
     form {
         max-width: 400px;
         margin: 0 auto;
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
-        background-color: #f9f9f9;
+        background-color: #ffffff;
     }
-
     label {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         font-weight: bold;
+        color: #333;
     }
-
     input[type="text"],
     input[type="email"],
     select {
         width: calc(100% - 12px);
-        padding: 6px;
-        margin-bottom: 10px;
+        padding: 10px;
+        margin-bottom: 15px;
         border: 1px solid #ccc;
-        border-radius: 3px;
+        border-radius: 4px;
         font-size: 14px;
+        transition: border-color 0.3s ease-in-out;
     }
-
     select {
         width: 100%;
     }
-
     input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 15px;
+        background-color: #007bff;
+        color: #fff;
+        padding: 12px 20px;
         border: none;
-        border-radius: 3px;
+        border-radius: 4px;
         cursor: pointer;
         font-size: 16px;
-        text-align: center; /* Untuk mengatur teks ke tengah */
-        display: block; /* Agar tombol berada pada baris yang terpisah */
-        margin: 0 auto; /* Agar tombol terpusat */
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
     }
-
     input[type="submit"]:hover {
-        background-color: #45a049;
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+    input[type="submit"]:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
     }
 </style>
-
 <form action="<?= site_url('user/update/' . $userData->id) ?>" method="post">
     <label for="username">Username:</label>
     <input type="text" name="username" value="<?= $userData->username ?>" id="username">
