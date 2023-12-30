@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Chat App</title>
+    <title>MindfulYouth</title>
     
     <script type="text/javascript" src="<?php echo base_url() . 'assets/js/'; ?>jquery.min.js"></script>
 
@@ -68,10 +68,10 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="">
-            <img src="<?php echo base_url(); ?>assets/images/logo.png" height="30" width="45" />
+            <img src="<?php echo base_url(); ?>assets/images/logo.jpg" height="30" width="45" />
           </a>
           <a class="navbar-brand">
-            Post Chat
+            MindfulYouth
           </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
