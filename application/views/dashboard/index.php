@@ -1,6 +1,32 @@
+<style>
+    .slider_section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      padding: 50px 0; 
+    }
+    .carousel-inner {
+      margin:  50px 0; 
+    }
+    .detail-box,
+    .img-box {
+      max-width: 100%; 
+      box-sizing: border-box;
+      margin: 0 auto; 
+    }
+    .detail-box {
+      padding: 20px; 
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .img-box {
+      padding: 20px; 
+    }
+</style>
 <!DOCTYPE html>
 <html>
-
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -11,9 +37,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-
   <title>MiFuYo</title>
-
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="<?= base_url('assets/assets/') ?>css/bootstrap.css" />
