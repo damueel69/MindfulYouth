@@ -1,7 +1,7 @@
 <table class="table table-bordered">
     <tr>
         <td style="width: 60px;">
-            <img src="<?php echo base_url(); ?>assets/images/logo.jpg" width="0" />
+            <img src="<?php echo base_url(); ?>assets/images/logo.jpg" width="100" />
         </td>
         <td>
             <h2 style="border: none;">Form Registrasi</h2>
