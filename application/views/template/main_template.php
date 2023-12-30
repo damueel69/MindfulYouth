@@ -1,3 +1,21 @@
+<style>
+  .footer_section {
+    background-color: #AFEEEE;
+    color: #333;
+    padding: 50px 0;
+    margin-top: 50px;
+  }
+
+  .footer_section h4 {
+    color: #333;
+  }
+  .info_contact p {
+    margin-bottom: 5px;
+  }
+  .img-box {
+    margin-top: 20px;
+  }
+</style>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +27,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Post Chat</title>
+    <title>MindfulYouth</title>
     
     <script type="text/javascript" src="<?php echo base_url() . 'assets/js/'; ?>jquery.min.js"></script>
 
@@ -172,7 +190,34 @@
     <div class="container theme-showcase" role="main">
       <?php echo $contents; ?>
     </div> <!-- /container -->
-
+    <footer class="footer_section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4">
+        <div class="img-box mt-3">
+          <img src="<?php echo base_url(); ?>assets/images/logo.jpg" alt="Your Image" height="150" width="150" /> 
+        </div>
+      </div>
+      <div class="col-md-4">
+      <h4><strong>MindfulYouth</strong></h4>
+        <p class="text-justify">
+          Gangguan kesehatan mental yang dapat dialami oleh seseorang sangat beragam. Terdapat beberapa faktor yang menunjang terjadinya masalah gangguan kesehatan mental. 
+          Dengan adanya MindfulYouth nantinya harapan dapat membantu meningkatkan kepedulian
+          keluarga dan lingkungan masyarakat untuk lebih peduli terhadap penderita gangguan kesehatan mental baik dalam usia remaja ataupun lansia. Selain itu, juga bisa dengan mudah mendapatkan 
+          informasi tentang gangguan mental dan cara penanganannya.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h4><strong>Contact Us</strong></h4>
+        <div class="info_contact">
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i> Location: Your Address</p>
+          <p><i class="fa fa-phone" aria-hidden="true"></i> Call: +01 1234567890</p>
+          <p><i class="fa fa-envelope"></i> Email: demo@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
