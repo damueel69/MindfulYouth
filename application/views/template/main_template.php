@@ -94,7 +94,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="<?php echo base_url(); ?>index.php/dashboard">
-            <img src="<?php echo base_url(); ?>assets/images/logo.png" height="30" width="45" />
+            <img src="<?php echo base_url(); ?>assets/images/logo.jpg" height="30" width="45" />
           </a>
           <a class="navbar-brand" href="<?php echo base_url(); ?>index.php/dashboard">
             Mifuyu
