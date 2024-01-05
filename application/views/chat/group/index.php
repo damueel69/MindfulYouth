@@ -55,7 +55,7 @@
             <?php if ($this->session->userdata('role') == 'Admin'): ?>
                 <a href="<?= base_url()?>Chat/" class="btn btn-primary">Pilih Psikiater</a>
             <?php else: ?>
-                <?php echo anchor('group/psikiater', 'Pilih Spesialist Psikiater', ['class' => ''btn btn-info']); ?>
+                 <?php echo anchor('group/psikiater', 'Pilih Spesialist Psikiater', ['class' => 'btn btn-info']); ?>
             <?php endif; ?>
         </div>
     </div>
