@@ -4,7 +4,7 @@ echo form_open('magazine');
 <table class="table table-bordered">
     <tr>
         <td width="92%"><input type="text" name="messages" class="form-control" placeholder="Apa yang anda pikirkan?"></td>
-        <td width="8%"><input type="submit" name="submit" value="Broadcast!" class="btn btn-primary btn-sm" /></td>
+        <td width="8%"><input type="submit" name="submit" value="Broadcast!" class="btn btn-primary" /></td>
     </tr>
 </table>
 <table class="table table-bordered table-condensed table-hover table-responsive">
