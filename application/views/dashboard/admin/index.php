@@ -41,9 +41,9 @@
                     $button_activate
                 ."</td>
                 <td>
-                <a href='user/detail/$r->id' class='btn btn-info btn-sm'>Detail</a> <!-- Detail action -->
-                <a href='user/edit/$r->id' class='btn btn-primary btn-sm'>Edit</a> <!-- Edit action -->
-                <a href='user/delete/$r->id' class='btn btn-danger btn-sm'>Hapus</a> <!-- Delete action -->
+                <a href='user/detail/$r->id' class='btn btn-info'>Detail</a> <!-- Detail action -->
+                <a href='user/edit/$r->id' class='btn btn-primary'>Edit</a> <!-- Edit action -->
+                <a href='user/delete/$r->id' class='btn btn-danger'>Hapus</a> <!-- Delete action -->
                 </td>
             </tr>";
         }
@@ -96,9 +96,9 @@
                     $button_activate
                 ."</td>
                 <td>
-                <a href='user/detail/$r->id' class='btn btn-info btn-sm'>Detail</a> <!-- Detail action -->
-                <a href='user/edit/$r->id' class='btn btn-primary btn-sm'>Edit</a> <!-- Edit action -->
-                <a href='user/delete/$r->id' class='btn btn-danger btn-sm'>Hapus</a> <!-- Delete action -->
+                <a href='user/detail/$r->id' class='btn btn-info'>Detail</a> <!-- Detail action -->
+                <a href='user/edit/$r->id' class='btn btn-primary'>Edit</a> <!-- Edit action -->
+                <a href='user/delete/$r->id' class='btn btn-danger'>Hapus</a> <!-- Delete action -->
             </tr>";
         }
     }
