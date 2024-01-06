@@ -82,7 +82,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><?php echo anchor('auth/login', 'Login'); ?></li>
-            <li><?php echo anchor('auth/register', 'Registrasi'); ?></li>
+            <li><?php echo anchor('auth/choose', 'Registrasi'); ?></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
