@@ -100,7 +100,12 @@ class Auth extends CI_Controller
             // $this->load->view('auth/index');
         }
     }
-    
+    public function choose()
+    {
+        
+            $this->template->load('template/login_template', 'register/index');
+        
+    }
     public function register()
     {
         if (isset($_POST['submit'])) {
@@ -116,9 +121,40 @@ class Auth extends CI_Controller
 
             redirect('auth');
         } else {
-            $this->template->load('template/login_template', 'register/index');
+            $this->template->load('template/login_template', 'register/index1');
         }
     }
+
+    public function register2()
+    {
+        if (isset($_POST['submit'])) {
+            $data['first_name'] = $this->input->post('first_name');
+            $data['last_name'] = $this->input->post('last_name');
+            $data['division'] = $this->input->post('division');
+            $data['email'] = $this->input->post('email');
+            $data['username'] = $this->input->post('username');
+            $data['password'] = $this->input->post('password');
+            $data['avatar'] = 'default.jpeg';
+            $data['role'] = '2'; // Set nilai role secara otomatis
+            
+            // Menambahkan nilai spesialist jika ada
+            $spesialist = $this->input->post('spesialist');
+            if (!empty($spesialist)) {
+                $data['spesialist'] = $spesialist;
+            }
+    
+            // Menambahkan nomor HP
+            $data['no_hp'] = $this->input->post('no_hp');
+            
+            $this->db->insert('users', $data);
+    
+            redirect('auth');
+        } else {
+            $this->template->load('template/login_template', 'register/index2');
+        }
+    }
+    
+
 
     public function logout()
     {
