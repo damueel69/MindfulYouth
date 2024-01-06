@@ -22,7 +22,7 @@
   </tbody>
 </table>
 <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">Login</button> <br />
-<?php echo anchor('auth/register', 'Register', ['class' => 'btn btn-lg btn-info btn-block']); ?>
+<?php echo anchor('auth/choose', 'Register', ['class' => 'btn btn-lg btn-info btn-block']); ?>
 <?php
     echo form_close();
 ?>
