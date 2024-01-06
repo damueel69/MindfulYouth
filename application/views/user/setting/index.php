@@ -19,6 +19,10 @@
             <td><input type="text" name="email" value="<?php echo $record['email']; ?>" class="form-control" required></td>
         </tr>
         <tr>
+            <td>No HP</td>
+            <td><input type="text" name="no_hp" value="<?php echo $record['no_hp']; ?>" class="form-control" required></td>
+        </tr>
+        <tr>
             <td>Username</td>
             <td><input type="text" name="username" value="<?php echo $record['username']; ?>" class="form-control" required></td>
         </tr>
