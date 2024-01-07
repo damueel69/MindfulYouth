@@ -1,4 +1,9 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Artikel</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -9,6 +14,7 @@
         h1 {
             text-align: center;
             color: #333;
+            margin-bottom: 20px;
         }
         form {
             max-width: 600px;
@@ -33,10 +39,11 @@
             box-sizing: border-box;
             border: 1px solid #ccc;
             border-radius: 4px;
+            font-size: 16px;
         }
 
         select {
-            height: 40px; /* Sesuaikan tinggi sesuai kebutuhan */
+            height: 40px;
         }
 
         input[type="submit"] {
@@ -57,11 +64,6 @@
             resize: vertical;
         }
     </style>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Create Artikel</title>
 </head>
 <body>
     <h1>Create Artikel</h1>
@@ -71,21 +73,16 @@
         <label for="judul">Judul</label>
         <input type="text" name="judul"><br>
 
-        
-
         <label for="kategori">Kategori</label>
         <select name="kategori">
             <option value="Stress">Stress</option>
             <option value="Kecemasan">Kecemasan</option>
             <option value="Depresi">Depresi</option>
-            <option value="Kecemasan">Kecemasan</option>
-            <option value="Gangguan Kepribadian">Gangguan Kepribadian</option>
-            <option value="Gangguan Tidur">Gangguan Tidur</option>
-            <option value="Rumah Tangga">Rumah Tangga</option>
-
+            <!-- Opsi kategori lainnya -->
         </select><br>
+
         <label for="konten">Konten</label>
-        <textarea name="konten"></textarea><br>
+        <textarea name="konten" rows="8"></textarea><br>
         <input type="submit" value="Submit">
     </form>
 </body>
