@@ -38,7 +38,7 @@
 
 <div class="col-md-4">
     <div class="card mb-4">
-        <img src="<?= base_url('assets/assets/') ?>images/kanselor.jpg" class="card-img-top" alt="Konselor Image">
+        <img src="<?= base_url('assets/assets/') ?>images/konselor.png" class="card-img-top" alt="Konselor Image">
         <div class="card-body">
             <h2 class="card-title">Chat Konselor</h2>
             <p class="card-text">Konselor siap membantu Anda dengan berbagai permasalahan kehidupan sehari-hari, memberikan dukungan emosional, serta bantuan dalam menghadapi situasi yang sulit.</p>
@@ -48,7 +48,7 @@
 </div>
 <div class="col-md-4">
     <div class="card mb-4">
-        <img src="<?= base_url('assets/assets/') ?>images/psikitiater.png" class="card-img-top" alt="Psikiater Image">
+        <img src="<?= base_url('assets/assets/') ?>images/psiketer.jpeg" class="card-img-top" alt="Psikiater Image">
         <div class="card-body">
             <h2 class="card-title">Chat Psikiater</h2>
             <p class="card-text">Psikiater adalah tenaga medis yang memiliki keahlian khusus dalam menangani masalah kesehatan mental, diagnosis, serta pengobatan. Mereka dapat memberikan layanan konsultasi dan terapi khusus untuk masalah kejiwaan.</p>
