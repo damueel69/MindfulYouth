@@ -2,7 +2,7 @@
   .footer_section {
     background-color: #AFEEEE;
     color: #333;
-    padding: 50px;
+    padding: 50px 0;
     margin-top: 50px;
   }
 
@@ -15,58 +15,6 @@
   .img-box {
     margin-top: 20px;
   }
-
-.navbar-blue {
-  background-color: #AFEEEE; 
-  border-color: #3498db;
-}
-
-.navbar-blue .navbar-brand {
-  color: #333; 
-}
-
-.navbar-blue .navbar-brand:hover,
-.navbar-blue .navbar-brand:focus {
-  color: #333; 
-}
-
-.navbar-blue .navbar-nav > li > a {
-  color: #333;
-}
-
-.navbar-blue .navbar-nav > li > a:hover,
-.navbar-blue .navbar-nav > li > a:focus {
-  color: #ffffff; 
-  background-color: #2980b9; 
-}
-
-.navbar-blue .navbar-nav > .active > a,
-.navbar-blue .navbar-nav > .active > a:hover,
-.navbar-blue .navbar-nav > .active > a:focus {
-  color: #ffffff; 
-  background-color: #AFEEEE; 
-}
-
-.navbar-blue .navbar-nav > .open > a,
-.navbar-blue .navbar-nav > .open > a:hover,
-.navbar-blue .navbar-nav > .open > a:focus {
-  color: #ffffff; 
-  background-color: #2980b9; 
-}
-
-.navbar-blue .navbar-toggle {
-  border-color: #333; 
-}
-
-.navbar-blue .navbar-toggle:hover,
-.navbar-blue .navbar-toggle:focus {
-  background-color: #2980b9; 
-}
-
-.navbar-blue .navbar-toggle .icon-bar {
-  background-color: #ffffff; 
-}
-
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -133,10 +81,11 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body style="background-color: #9EC8B9">
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-blue navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top"
+    style="background-color: #4F6F52">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -241,35 +190,39 @@
 
     <div class="container theme-showcase" role="main">
       <?php echo $contents; ?>
-    </div> <!-- /container -->
-    <footer class="footer_section">
-  <div class="container">
-    <div class="row align-items-center">
+    </div> 
+    <!-- /container -->
+    
+
+<footer class="text-center text-lg-start bg-body-tertiary text-muted"
+style="background-color: #2B2B2B">
+<div class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="row">
       <div class="col-md-4">
-        <div class="img-box mt-3">
-          <img src="<?php echo base_url(); ?>assets/images/logo.jpg" alt="Your Image" height="150" width="150" /> 
+        <div class="img-box text-center mt-3">
+          <img src="<?php echo base_url(); ?>assets/images/logo.jpg" alt="Your Image" class="img-fluid rounded-circle shadow-lg" style="max-width: 150px;" /> 
         </div>
       </div>
       <div class="col-md-4">
-      <h4><strong>MindfulYouth</strong></h4>
-        <p class="text-justify">
-          Gangguan kesehatan mental yang dapat dialami oleh seseorang sangat beragam. Terdapat beberapa faktor yang menunjang terjadinya masalah gangguan kesehatan mental. 
-          Dengan adanya MindfulYouth nantinya harapan dapat membantu meningkatkan kepedulian
-          keluarga dan lingkungan masyarakat untuk lebih peduli terhadap penderita gangguan kesehatan mental baik dalam usia remaja ataupun lansia. Selain itu, juga bisa dengan mudah mendapatkan 
-          informasi tentang gangguan mental dan cara penanganannya.
-        </p>
+        <h4 class="mb-4"><strong>MindfulYouth</strong></h4>
+        <p class="text-justify">Gangguan kesehatan mental yang dapat dialami oleh seseorang sangat beragam. Dengan adanya MindfulYouth, harapan dapat membantu meningkatkan kepedulian keluarga dan masyarakat terhadap penderita gangguan kesehatan mental.</p>
       </div>
       <div class="col-md-4">
-        <h4><strong>Contact Us</strong></h4>
+        <h4 class="mb-4"><strong>Contact Us</strong></h4>
         <div class="info_contact">
-          <p><i class="fa fa-map-marker" aria-hidden="true"></i> Location: Your Address</p>
-          <p><i class="fa fa-phone" aria-hidden="true"></i> Call: +01 1234567890</p>
-          <p><i class="fa fa-envelope"></i> Email: demo@gmail.com</p>
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i> Location: Jln. Umban Sari No. 1</p>
+          <p><i class="fa fa-phone" aria-hidden="true"></i> Call: +62 82288204028</p>
+          <p><i class="fa fa-envelope"></i> Email: ikhsan22ti@mahasiswa.pcr.acid</p>
+          <ul class="list-inline social-icons mt-4">
+            <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-instagram"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-</footer>
+  </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
