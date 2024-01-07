@@ -22,9 +22,23 @@
     <style>
         /* Your custom styles */
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
-            color: #495057;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            color: #fff; /* Mengubah warna teks menjadi putih */
+            margin-bottom: 20px;
+        }
+        p {
+            color: #fff; /* Mengubah warna teks menjadi putih */
+        }
+        
+        h1 span {
+            color: #ffd700; /* Warna teks tambahan (span) */
         }
 
         .slider_section {
@@ -71,42 +85,49 @@
         }
         
         .white-button {
-        background-color: #ffffff;
-        color: #000000; 
-        padding: 10px 20px; 
-        border: 1px solid #000000; 
-        text-decoration: none; 
-        display: inline-block;
-        font-size: 16px; 
-        cursor: pointer;
+            background-color: #9EC8B9; /* Warna latar tombol */
+            color: #092635; /* Warna teks tombol */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none; /* Menghapus garis bawah default */
+        }
+        .white-button:hover {
+            background-color: #AADBCF; /* Warna latar saat hover */
         }
     }
     </style>
 </head>
 
 <body>
-        <section class="slider_section ">
-            <div class="detail-box">
+  <br><br>
+        <section class="slider_section "
+        style="background-color: #1B4242">
+            <div class="detail-box" style="background-color: #5C8374">
                 <img src="<?= base_url('assets/images/') ?>mental.jpg" class="box-image" >
                 <h1>MiFuyo<span> Artikel</span></h1>
-                <p>Mifuyu dalam MindfulYouth adalah sumber daya utama yang menawarkan artikel-artikel terpercaya dan terkini mengenai kesehatan mental, teknik pengelolaan stres, dan perjalanan pribadi menuju keseimbangan emosional. Setiap artikel ditulis oleh ahli dalam bidangnya untuk memberikan pemahaman yang mendalam kepada pengguna.</p>
-                <button class="white-button"><?php echo anchor('artikel', 'Mifuyu Artikel');?></button>
-            </div>
+                <p >Mifuyu dalam MindfulYouth adalah sumber daya utama yang menawarkan artikel-artikel terpercaya dan terkini mengenai kesehatan mental, teknik pengelolaan stres, dan perjalanan pribadi menuju keseimbangan emosional. Setiap artikel ditulis oleh ahli dalam bidangnya untuk memberikan pemahaman yang mendalam kepada pengguna.</p>
+                <button class="white-button"><?php echo anchor('artikel', 'Mifuyu Artikel', array('style' => 'color: #092635'));?></button>            </div>
         </section>
-        <section class="slider_section ">
-            <div class="detail-box">
+        <section class="slider_section "
+        style="background-color: #1B4242">>>
+            <div class="detail-box"
+            style="background-color: #5C8374">
                 <img src="<?= base_url('assets/images/') ?>sehat.jpg" class="box-image" >
                 <h1>Journal<span> Kesehatan</span></h1>
                 <p>Journal Kesehatan adalah fitur personal yang memungkinkan pengguna untuk mencatat perasaan, pikiran, dan perubahan dalam kesehatan mental mereka dari waktu ke waktu. Dengan ini, pengguna dapat melacak pola-pola, mengidentifikasi faktor-faktor pemicu, serta memonitor perubahan suasana hati dan tingkat stres mereka.</p>
-                <button class="white-button"><?php echo anchor('magazine', 'Journal Kesehatan');?></button>
+                <button class="white-button"><?php echo anchor('magazine', 'Journal Kesehatan', array('style' => 'color: #092635'));?></button>
             </div>
         </section>
-        <section class="slider_section ">
-            <div class="detail-box">
+        <section class="slider_section "
+        style="background-color: #1B4242">>
+            <div class="detail-box" style="background-color: #5C8374">
                 <img src="<?= base_url('assets/images/') ?>cek.jpg" class="box-image" >
                 <h1>3Stella<span> Direct Message</span></h1>
                 <p>Fitur ini menghadirkan tiga fitur utama: Chat Group, Chat Konselor, dan Chat Psikiater. Pengguna dapat bergabung dalam komunitas, berbicara langsung dengan konselor, atau menjadwalkan konsultasi dengan psikiater untuk mendapatkan bantuan yang dibutuhkan sesuai dengan kebutuhan mereka.</p>
-                <button class="white-button"><?php echo anchor('Chat/group', '3D Stella DM');?></button>
+                <button class="white-button"><?php echo anchor('Chat/group', '3D Stella DM' , array('style' => 'color: #092635'));?></button>
             </div>
         </section>
     </div>
