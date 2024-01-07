@@ -39,14 +39,19 @@ class Artikel extends CI_Controller {
             // Validasi data dari form
             $this->form_validation->set_rules('judul', 'Judul', 'required');
             $this->form_validation->set_rules('konten', 'Konten', 'required');
+            date_default_timezone_set('Asia/Jakarta'); // Set zona waktu menjadi WIB
+            $tanggal_waktu = date('Y-m-d H:i:s'); // Format sesuai dengan database MySQL
+
+
 
             if ($this->form_validation->run() === TRUE) {
                 // Simpan data artikel ke dalam database
                 $data = [
                     'judul' => $this->input->post('judul'),
                     'konten' => $this->input->post('konten'),
-                    'tanggal_publikasi' => date('Y-m-d'), // Tanggal saat ini
+                    'tanggal_publikasi' => $tanggal_waktu, // Gunakan variabel waktu yang telah diformat
                     'kategori' => $this->input->post('kategori')
+
                 ];
 
                 $this->Artikel_model->createArticle($data);
