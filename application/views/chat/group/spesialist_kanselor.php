@@ -109,6 +109,6 @@
             </tbody>
         </table>
     <?php endforeach; ?>
-    <!-- Tambahkan link script jika diperlukan -->
+    <a href="<?= base_url('index.php/chat/group') ?>" class="btn btn-info">Kembali</a>
 </body>
 </html>
