@@ -2,7 +2,7 @@
   .footer_section {
     background-color: #AFEEEE;
     color: #333;
-    padding: 50px 0;
+    padding: 50px;
     margin-top: 50px;
   }
 
@@ -15,6 +15,58 @@
   .img-box {
     margin-top: 20px;
   }
+
+.navbar-blue {
+  background-color: #AFEEEE; 
+  border-color: #3498db;
+}
+
+.navbar-blue .navbar-brand {
+  color: #333; 
+}
+
+.navbar-blue .navbar-brand:hover,
+.navbar-blue .navbar-brand:focus {
+  color: #333; 
+}
+
+.navbar-blue .navbar-nav > li > a {
+  color: #333;
+}
+
+.navbar-blue .navbar-nav > li > a:hover,
+.navbar-blue .navbar-nav > li > a:focus {
+  color: #ffffff; 
+  background-color: #2980b9; 
+}
+
+.navbar-blue .navbar-nav > .active > a,
+.navbar-blue .navbar-nav > .active > a:hover,
+.navbar-blue .navbar-nav > .active > a:focus {
+  color: #ffffff; 
+  background-color: #AFEEEE; 
+}
+
+.navbar-blue .navbar-nav > .open > a,
+.navbar-blue .navbar-nav > .open > a:hover,
+.navbar-blue .navbar-nav > .open > a:focus {
+  color: #ffffff; 
+  background-color: #2980b9; 
+}
+
+.navbar-blue .navbar-toggle {
+  border-color: #333; 
+}
+
+.navbar-blue .navbar-toggle:hover,
+.navbar-blue .navbar-toggle:focus {
+  background-color: #2980b9; 
+}
+
+.navbar-blue .navbar-toggle .icon-bar {
+  background-color: #ffffff; 
+}
+
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -84,7 +136,7 @@
   <body>
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-blue navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
