@@ -64,6 +64,12 @@
             line-height: 1.5;
         }
 
+        .box-image {
+        max-width: 100%; 
+        height: auto; 
+        margin-bottom: 15px; 
+        }
+        
         .white-button {
         background-color: #ffffff;
         color: #000000; 
@@ -81,6 +87,7 @@
 <body>
         <section class="slider_section ">
             <div class="detail-box">
+                <img src="<?= base_url('assets/images/') ?>mental.jpg" class="box-image" >
                 <h1>MiFuyo<span> Artikel</span></h1>
                 <p>Mifuyu dalam MindfulYouth adalah sumber daya utama yang menawarkan artikel-artikel terpercaya dan terkini mengenai kesehatan mental, teknik pengelolaan stres, dan perjalanan pribadi menuju keseimbangan emosional. Setiap artikel ditulis oleh ahli dalam bidangnya untuk memberikan pemahaman yang mendalam kepada pengguna.</p>
                 <button class="white-button"><?php echo anchor('artikel', 'Mifuyu Artikel');?></button>
@@ -88,6 +95,7 @@
         </section>
         <section class="slider_section ">
             <div class="detail-box">
+                <img src="<?= base_url('assets/images/') ?>sehat.jpg" class="box-image" >
                 <h1>Journal<span> Kesehatan</span></h1>
                 <p>Journal Kesehatan adalah fitur personal yang memungkinkan pengguna untuk mencatat perasaan, pikiran, dan perubahan dalam kesehatan mental mereka dari waktu ke waktu. Dengan ini, pengguna dapat melacak pola-pola, mengidentifikasi faktor-faktor pemicu, serta memonitor perubahan suasana hati dan tingkat stres mereka.</p>
                 <button class="white-button"><?php echo anchor('magazine', 'Journal Kesehatan');?></button>
@@ -95,6 +103,7 @@
         </section>
         <section class="slider_section ">
             <div class="detail-box">
+                <img src="<?= base_url('assets/images/') ?>cek.jpg" class="box-image" >
                 <h1>3Stella<span> Direct Message</span></h1>
                 <p>Fitur ini menghadirkan tiga fitur utama: Chat Group, Chat Konselor, dan Chat Psikiater. Pengguna dapat bergabung dalam komunitas, berbicara langsung dengan konselor, atau menjadwalkan konsultasi dengan psikiater untuk mendapatkan bantuan yang dibutuhkan sesuai dengan kebutuhan mereka.</p>
                 <button class="white-button"><?php echo anchor('Chat/group', '3D Stella DM');?></button>
