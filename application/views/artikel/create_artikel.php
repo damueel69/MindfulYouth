@@ -71,8 +71,7 @@
         <label for="judul">Judul</label>
         <input type="text" name="judul"><br>
 
-        <label for="konten">Konten</label>
-        <textarea name="konten"></textarea><br>
+        
 
         <label for="kategori">Kategori</label>
         <select name="kategori">
@@ -85,7 +84,8 @@
             <option value="Rumah Tangga">Rumah Tangga</option>
 
         </select><br>
-
+        <label for="konten">Konten</label>
+        <textarea name="konten"></textarea><br>
         <input type="submit" value="Submit">
     </form>
 </body>

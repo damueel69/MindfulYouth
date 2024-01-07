@@ -1,64 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<body>
+<div class="jumbotron"
+style="background-color: #5C8374">
+    <div class="container text-center">
+      <h1>Mifuyu Artikel</h1>      
+      <p>
+    Temukan beragam artikel informatif yang membantu Anda memahami dan merawat kesehatan mental Anda melalui MindfulYouth/Mifuyu. Jelajahi topik-topik seperti manajemen stres, keseimbangan emosional, keterampilan koping, serta strategi pemulihan dan peningkatan kesejahteraan jiwa. Sumber daya yang tersedia bertujuan untuk memberikan wawasan mendalam, solusi praktis, dan panduan yang didukung oleh ahli di bidangnya. Mulailah perjalanan Anda menuju kesehatan mental yang lebih baik hari ini.
+</p>
 
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    </div>
+  </div>
+  <nav class="navbar navbar-inverse">
+    
+      
+        
+         
+       
+         
+        
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li ><?php
+        echo anchor('artikel/stress', 'Stress');
+        ?></li>
+          <li><?php
+        echo anchor('artikel/depresi', 'Depresi');
+        ?></li>
+          <li><?php
+        echo anchor('artikel/kecemasan', 'Kecemasan');
+        ?></li>
+          <li> <?php
+        echo anchor('artikel/gKepribadian', 'Gangguan Kepribadian');
+        ?></li>
+        <li> <?php
+        echo anchor('artikel/gTidur', 'Gangguan Tidur');
+        ?></li>
+        <li> <?php
+        echo anchor('artikel/rumah_tangga', 'Rumah Tangga');
+        ?></li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
 
-    <title>Article - MIFUYU</title>
+  
 
-    <!-- CSS FILES -->
-    <link href="<?= base_url('assets/css_article/templatemo-kind-heart-charity.css') ?>" rel="stylesheet" />
-</head>
+ 
+  
+  <div class="container" id="daftar-artikel">
+    <!-- Daftar artikel akan dimuat di sini -->
+    <ul>
+        <?php
+        // Mengurutkan artikel dari yang terbaru
+        usort($articles, function ($a, $b) {
+            return strtotime($b->tanggal_publikasi) - strtotime($a->tanggal_publikasi);
+        });
 
-<body id="section_1">
-    <main>
-        <!-- Article -->
-        <section class="section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 col-12 text-center mx-auto">
-                        <h2 class="mb-5">Selamat Datang di Artikel MIFUYO</h2>
-                    </div>
+        foreach ($articles as $article) {
+            // Mengubah format tanggal_publikasi menjadi format yang diinginkan (dengan tambahan WIB)
+            $tanggal_publikasi = date('l, d F Y H:i:s', strtotime($article->tanggal_publikasi)) . ' WIB';
+        ?>
+            <li>
+                <h2><?php echo anchor('artikel/detail/' . $article->id, $article->judul); ?></h2>
+                <p><strong>Tanggal Publikasi:</strong> <?php echo $tanggal_publikasi; ?></p>
+                <p><strong>Kategori:</strong> <?php echo $article->kategori; ?></p>
+            </li>
+        <?php } ?>
+    </ul>
+</div>
 
-                    <!-- Category Section -->
-                    <div id="kategori">
-                        <?php
-                        $categories = [
-                            ['label' => 'Depresi', 'icon' => 'hands.png'],
-                            ['label' => 'Stress', 'icon' => 'heart.png'],
-                            ['label' => 'Kecemasan', 'icon' => 'receive.png'],
-                            ['label' => 'Gangguan Kepribadian', 'icon' => 'hands.png'],
-                            ['label' => 'Rumah Tangga', 'icon' => 'heart.png'],
-                            ['label' => 'Gangguan Tidur', 'icon' => 'receive.png']
-                        ];
 
-                        foreach ($categories as $category) {
-                            echo '<div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">';
-                            echo '<div class="featured-block d-flex justify-content-center align-items-center">';
-                            echo '<a href="#" class="d-block">';
-                            echo '<img src="' . base_url('assets/images_article/icons/') . $category['icon'] . '" class="featured-block-image img-fluid" alt="" />';
-                            echo '<p class="featured-block-text"><strong>' . $category['label'] . '</strong></p>';
-                            echo '</a>';
-                            echo '</div>';
-                            echo '</div>';
-                        }
-                        ?>
-                    </div>
-                </div>
-        </section>
-    </main>
 
-    <!-- JAVASCRIPT FILES -->
-    <script src="<?= base_url('assets/js_article/jquery.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js_article/bootstrap.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js_article/jquery.sticky.js') ?>"></script>
-    <script src="<?= base_url('assets/js_article/click-scroll.js') ?>"></script>
-    <script src="<?= base_url('assets/js_article/counter.js ') ?>"></script>
-    <script src="<?= base_url('assets/js_article/custom.js') ?>"></script>
+
+
 </body>
-
 </html>
