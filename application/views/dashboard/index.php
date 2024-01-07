@@ -133,4 +133,67 @@
     </div>
 </body>
 
-</html>
+<!-- chat_users_view.php -->
+<!-- View File (dashboard_contacts.php) -->
+
+<h2>Daftar Kontak Psikiater</h2>
+<br>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Username</th>
+            <th>Spesialis</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        $no = 0;
+        foreach ($record->result() as $r) {
+            if ($r->division == 'Psikiater') {
+                $no++;
+                echo "<tr>
+                    <td>$no</td>
+                    <td>$r->username</td>
+                    <td>$r->spesialist</td>
+                    <td>".anchor('chat/redirect/'.$this->session->userdata('user_id').'/'.$r->id, 'Chat', ['class' => 'btn btn-primary btn-sm'])."</td>
+                </tr>";
+            }
+        }
+        ?>
+    </tbody>
+</table>
+
+<h2>Daftar Kontak Kanselor</h2>
+<br>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Username</th>
+            <th>Spesialis</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        $no = 0;
+        foreach ($record->result() as $r) {
+            if ($r->division == 'Kanselor') {
+                $no++;
+                echo "<tr>
+                    <td>$no</td>
+                    <td>$r->username</td>
+                    <td>$r->spesialist</td>
+                    <td>".anchor('chat/redirect/'.$this->session->userdata('user_id').'/'.$r->id, 'Chat', ['class' => 'btn btn-primary btn-sm'])."</td>
+                </tr>";
+            }
+        }
+        ?>
+    </tbody>
+</table>
+
+<script src="<?php echo base_url(); ?>js/dashboard.js" type="text/javascript"></script>
