@@ -24,7 +24,7 @@
     <!-- end of td 1 -->
   </tr>
 </table> <br>
-<a href="<?= base_url('index.php/chat/group_worker') ?>" class="btn btn-info">Kembali</a>
+<a href="<?= base_url('index.php/chat/group') ?>" class="btn btn-info">Kembali</a>
 
 <script type="text/javascript" charset="utf-8" async defer>
   var webrtc = new SimpleWebRTC({
