@@ -8,5 +8,5 @@
         <td colspan="2" align="right"><input type="submit" name="submit" value="Submit" /></td>
     </tr>
 </table>
-<a href="<?= base_url('index.php/chat/group_worker') ?>" class="btn btn-info">Kembali</a>
+<a href="<?= base_url('index.php/chat/group') ?>" class="btn btn-info">Kembali</a>
 <?php echo form_close(); ?>
