@@ -105,7 +105,6 @@
                         </td>
                     </tr>
                 <?php endforeach; ?>
-                 <a href="<?= base_url('index.php/chat/group') ?>" class="btn btn-info">Kembali</a>
             </tbody>
         </table>
     <?php endforeach; ?>
