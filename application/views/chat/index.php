@@ -66,5 +66,4 @@
     </td>
   </tr>
 </table>
-<a href="<?= base_url('index.php/dashboard') ?>" class="btn btn-info">Kembali</a>
 
