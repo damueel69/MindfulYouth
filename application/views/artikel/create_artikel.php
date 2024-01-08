@@ -78,7 +78,11 @@
             <option value="Stress">Stress</option>
             <option value="Kecemasan">Kecemasan</option>
             <option value="Depresi">Depresi</option>
-            <!-- Opsi kategori lainnya -->
+            <option value="Kecemasan">Kecemasan</option>
+            <option value="Gangguan Kepribadian">Gangguan Kepribadian</option>
+            <option value="Gangguan Tidur">Gangguan Tidur</option>
+            <option value="Rumah Tangga">Rumah Tangga</option>
+        
         </select><br>
 
         <label for="konten">Konten</label>
